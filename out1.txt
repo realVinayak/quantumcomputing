@@ -1,0 +1,17 @@
+state:  -1 probability:  0.0
+state:  [0, 0, 0, 0] probability:  0.0306
+state:  [0, 0, 0, 1] probability:  0.032
+state:  [0, 0, 1, 0] probability:  0.0364
+state:  [0, 0, 1, 1] probability:  0.0304
+state:  [0, 1, 0, 0] probability:  0.039
+state:  [0, 1, 0, 1] probability:  0.034
+state:  [0, 1, 1, 0] probability:  0.0392
+state:  [0, 1, 1, 1] probability:  0.0336
+state:  [1, 0, 0, 0] probability:  0.035
+state:  [1, 0, 0, 1] probability:  0.0362
+state:  [1, 0, 1, 0] probability:  0.4866
+state:  [1, 0, 1, 1] probability:  0.0316
+state:  [1, 1, 0, 0] probability:  0.036
+state:  [1, 1, 0, 1] probability:  0.0326
+state:  [1, 1, 1, 0] probability:  0.0338
+state:  [1, 1, 1, 1] probability:  0.033
