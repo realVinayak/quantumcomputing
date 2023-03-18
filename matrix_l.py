@@ -6,7 +6,7 @@ def matrix_l(n, C, a, l_index):
     A_resolved = (a ** (2 ** l_index)) % C
     n_dim = 2 ** n
     gate_matrix = np.array(
-        np.zeros((n_dim, n_dim), dtype=complex))
+        np.zeros((n_dim, n_dim), dtype=float))
     for col_index in range(n_dim):
         col_binary = gen_binary(col_index, n)
         l_resolved = 2 - l_index

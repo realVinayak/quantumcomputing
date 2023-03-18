@@ -13,10 +13,10 @@ def cnot_gate_func(row_arr, col_arr):
     return cnot_matrix[row_index][col_index]
 
 
-def hadamard_arbitrary_gate(n, qubit_index):
+def hadamard_arbitrary_gate(n, qubit_index, dtype=float):
     num_dimension = 2 ** n
     gate_matrix = np.array(
-        np.zeros((num_dimension, num_dimension), dtype=complex))
+        np.zeros((num_dimension, num_dimension), dtype=dtype))
     for row_index in range(len(gate_matrix)):
         row_binary = gen_binary(row_index, n)
         for col_index in range(len(gate_matrix[row_index])):
@@ -29,7 +29,7 @@ def hadamard_arbitrary_gate(n, qubit_index):
                     state *= hadamard_gate(row_split, col_split)
                 else:
                     state *= kronecker_delta(row_split, col_split)
-            gate_matrix[row_index][col_index] = complex(state)
+            gate_matrix[row_index][col_index] = state
     return gate_matrix
 
 def apply_arbitrary_hadamard(n, state):
